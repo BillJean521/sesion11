@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio 3</title>
 </head>
 <body>
-    
+    <script>
+        let monto=parseInt(prompt("Ingrese el monto total de su compra: "));
+        let descuento = 0;
+        let total = 0;
+        
+        document.write("<h1>RESULTADOS</h1>","<br>");
+        document.write("Monto total: ",monto,"<br>");
+
+        if(monto<=100){
+            console.log("No hay descuentos");
+            document.write("No hay descuentos","<br>");
+        }
+        else{
+            descuento = monto*0.10; //Multiplicar por 0.10 para tener el 10% de descuento
+            console.log("Se aplica un 10% de descuento ");
+            document.write("Se aplica un 10% de descuento","<br>");
+        }
+
+        total=monto-descuento; //Restar el monto con el descuento aplicado para el total
+        console.log("Total a pagar: ",total," $");
+        document.write("Total a pagar: ",total," $","<br>");
+
+    </script>
 </body>
 </html>
