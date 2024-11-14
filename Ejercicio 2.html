@@ -3,9 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio 2</title>
 </head>
 <body>
-    
+    <script>
+        let num=parseInt(prompt("Ingrese un numero: "));
+
+        document.write("<h1>RESULTADOS</h1>");
+        if(num%2==0){ //Modulo = % 
+            console.log(`${num} es un numero par`);
+            document.write(`${num} es un numero par`,"<br>");
+        }
+        else{
+            console.log(`${num} es un numero impar`);
+            document.write(`${num} es un numero impar`,"<br>");
+        }
+
+    </script>
 </body>
 </html>

@@ -10,7 +10,7 @@
         let nota=parseInt(prompt("Ingrese su nota final (0-100):"));
 
         document.write("<h1>RESULTADOS</h1>");
-        while(nota>100 || nota<0){
+        while(nota>100 || nota<0){  /*Agregamos un bucle mientras que el usario ingrese valores fuera del rango*/
             nota=parseInt(prompt("Fuera de rango, Ingrese nuevamente su nota final (0-100): "));
         }
 
