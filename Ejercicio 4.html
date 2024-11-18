@@ -14,11 +14,15 @@
     <script>
         let secreto= Math.floor(Math.random()*10)+1;
         let alazar=parseInt(prompt("Adiniva el numero secreto  del 1 al 10. Ingrese un numero: "));
+        
         if(alazar != secreto){
             console.log(`Lo siento, no es el numero secreto. El numero es ${secreto}`);
             document.write(`Lo siento, no es el numero secreto. El numero es ${secreto}`,"<br>");
+        }
+        else{
+            document.write(`Felicidades adivinaste el numero secreto. Es el ${secreto}`);
         };
-        document.write(`Felicidades adivinaste el numero secreto. Es el ${secreto}`);
+
     </script>
 </body>
 </html>
