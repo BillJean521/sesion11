@@ -12,9 +12,10 @@
         }
     </style>
     <script>
-        let secreto= Math.floor(Math.random()*10)+1;
+        let secreto= Math.floor(Math.random()*10)+1; //Generar el numero aleatorio *max)+min
         let alazar=parseInt(prompt("Adiniva el numero secreto  del 1 al 10. Ingrese un numero: "));
-        
+
+        document.write("<h2>RESULTADOS</h2>","<br>");
         if(alazar != secreto){
             console.log(`Lo siento, no es el numero secreto. El numero es ${secreto}`);
             document.write(`Lo siento, no es el numero secreto. El numero es ${secreto}`,"<br>");
