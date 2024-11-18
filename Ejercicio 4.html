@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio 4</title>
 </head>
 <body>
-    
+    <script>
+        let secreto= Math.random*(10-1)+1;
+        do{
+            let alazar=parseInt(prompt("Adiniva el numero secreto  del 1 al 10 <br> Ingrese un numero: "));
+            if(alazar != secreto){
+                console.log("Lo siento, no es el numero secreto. Siga intentando");
+                document.write("Lo siento, no es el numero secreto. Siga intentando","<br>");
+            };
+        }while(alazar===secreto);
+        document.write(`Felicidades adivinaste el numero secreto`);
+    </script>
 </body>
 </html>
